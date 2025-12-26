@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我 | TL2333</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="navbar">
+      <a class="logo" href="./index.html">TL2333</a>
+      <ul class="nav-links">
+        <li><a href="./projects.html">我的项目</a></li>
+        <li><a href="./about.html" class="active">关于我</a></li>
+        <li><a href="./contact.html">联系我</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h1>关于我</h1>
+      <p class="subtitle">用“简历式”结构讲清楚：我是谁、我会什么、我在往哪走。</p>
+    </section>
+
+    <section class="two-col">
+      <article class="card">
+        <h2>个人简介</h2>
+        <p>你好！我是 TL2333，目前在系统学习全栈开发：HTTP/REST、Node.js、SQL、部署。</p>
+        <p>我希望通过项目实践积累工程经验，并把每次学习沉淀成可展示的作品。</p>
+      </article>
+
+      <article class="card">
+        <h2>技能栈</h2>
+        <ul class="list">
+          <li><strong>前端：</strong>HTML / CSS / JavaScript（接下来：Angular）</li>
+          <li><strong>后端：</strong>Node.js（计划：Express + REST API）</li>
+          <li><strong>数据库：</strong>SQL（计划：PostgreSQL）</li>
+          <li><strong>工具：</strong>Git / GitHub / VS Code</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="card">
+      <h2>经历（可选）</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-time">2025</div>
+          <div class="timeline-body">
+            <h3>个人网站上线</h3>
+            <p>用 GitHub Pages 完成部署，开始搭建多页面作品集并持续迭代。</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">下一步</div>
+          <div class="timeline-body">
+            <h3>REST API + SQL 项目</h3>
+            <p>把项目数据从静态页升级成 API 驱动，练习 HTTP/REST 与数据库设计。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> TL2333</p>
+  </footer>
+
+  <script>
+    document.querySelector("#year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

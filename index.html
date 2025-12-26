@@ -7,16 +7,50 @@
     <link rel = "stylesheet" href = "style.css">
 </head>
 <body>  
+    <header>
+        <nav class = "navbar">
+            <a class = "logo" href = "./index.html">个人网站</a>
+            <ul class = "nav-links">
+                <li><a href = "./projects.html">我的项目</a></li>
+                <li><a href = "./about.html">关于我</a></li>
+                <li><a href = "./contact.html">联系我</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main class = "container">    
-        <h1> 
-            这是一个个人网站
-        </h1>
-        <p id = "tip">
-            欢迎来到我的个人网站！这里是一些关于我的信息。
-        </p>
-        <button id = 'btn'>点击我  </button>
+        <section class = "intro">
+            <h1>欢迎来到我的个人网站</h1>
+            <p>你好！我是Tim Li。这是我的个人网站，在这里你可以了解我的项目、背景以及如何联系我。</p>
+        </section>
+
+        <section class = "featured-projects">
+            <h2>精选项目</h2>
+            <div class = "project-list">
+                <div class = "project-item">
+                    <h3>项目一名称</h3>
+                    <p>项目一的简要描述。</p>
+                    <a href = "./projects.html#project1">了解更多</a>
+                </div>
+                <div class = "project-item">
+                    <h3>项目二名称</h3>
+                    <p>项目二的简要描述。</p>
+                    <a href = "./projects.html#project2">了解更多</a>
+                </div>
+                <div class = "project-item">
+                    <h3>项目三名称</h3>
+                    <p>项目三的简要描述。</p>
+                    <a href = "./projects.html#project3">了解更多</a>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <script src = "script.js"></script>
+    <footer class="container footer">
+        <p><span id="year"></span> Tim Li </p>
+    </footer>
+    <script>
+        document.querySelector("#year").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>

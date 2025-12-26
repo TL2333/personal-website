@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的项目 | TL2333</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="navbar">
+      <a class="logo" href="./index.html">TL2333</a>
+      <ul class="nav-links">
+        <li><a href="./projects.html" class="active">我的项目</a></li>
+        <li><a href="./about.html">关于我</a></li>
+        <li><a href="./contact.html">联系我</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h1>我的项目</h1>
+      <p class="subtitle">这里展示一些练习与作品（你可以持续更新）。</p>
+    </section>
+
+    <section class="card-grid">
+      <article class="card" id="project1">
+        <h2>项目一名称</h2>
+        <p>是项目</p>
+        <ul class="tags">
+          <li>HTML</li><li>CSS</li><li>JS</li>
+        </ul>
+        <div class="card-actions">
+          <a class="btn small" href="#">在线预览</a>
+          <a class="btn small secondary" href="#">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card" id="project2">
+        <h2>项目二名称</h2>
+        <p>是亮点</p>
+        <ul class="tags">
+          <li>Responsive</li><li>UI</li><li>Accessibility</li>
+        </ul>
+        <div class="card-actions">
+          <a class="btn small" href="#">在线预览</a>
+          <a class="btn small secondary" href="#">GitHub</a>
+        </div>
+      </article>
+
+      <article class="card" id="project3">
+        <h2>项目三名称</h2>
+        <p>我在学</p>
+        <ul class="tags">
+          <li>GitHub Pages</li><li>Workflow</li><li>Deploy</li>
+        </ul>
+        <div class="card-actions">
+          <a class="btn small" href="#">在线预览</a>
+          <a class="btn small secondary" href="#">GitHub</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> TL2333</p>
+  </footer>
+
+  <script>
+    document.querySelector("#year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

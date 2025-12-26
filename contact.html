@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>联系我 | TL2333</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="navbar">
+      <a class="logo" href="./index.html">TL2333</a>
+      <ul class="nav-links">
+        <li><a href="./projects.html">我的项目</a></li>
+        <li><a href="./about.html">关于我</a></li>
+        <li><a href="./contact.html" class="active">联系我</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-title">
+      <h1>联系我</h1>
+      <p class="subtitle">先做静态联系页；下一阶段我们会把它升级成后端表单（POST /api/contact）。</p>
+    </section>
+
+    <section class="two-col">
+      <article class="card">
+        <h2>联系方式</h2>
+        <ul class="list">
+          <li><strong>GitHub：</strong><a class="text-link" href="https://github.com/TL2333" target="_blank" rel="noreferrer">github.com/TL2333</a></li>
+          <li><strong>Email：</strong><span class="muted">（你填你的邮箱）</span></li>
+          <li><strong>LinkedIn：</strong><span class="muted">（可选）</span></li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>留言（先做前端体验）</h2>
+        <form class="form" onsubmit="event.preventDefault(); alert('已收到！下一阶段我们会把它接到后端 API 🙂');">
+          <label>你的称呼
+            <input required placeholder="例如：Alex" />
+          </label>
+          <label>你的邮箱
+            <input type="email" required placeholder="name@example.com" />
+          </label>
+          <label>想说的话
+            <textarea rows="5" required placeholder="写点什么..."></textarea>
+          </label>
+          <button class="btn" type="submit">发送</button>
+        </form>
+      </article>
+    </section>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> TL2333</p>
+  </footer>
+
+  <script>
+    document.querySelector("#year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
